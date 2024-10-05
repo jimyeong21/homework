@@ -4,4 +4,5 @@
 
 ## 과제 list
 
-[저를 소개합니다!](https://jimyeong21.github.io/homework/md/about-me)
+1차 과제 - [저를 소개합니다!](https://jimyeong21.github.io/homework/md/about-me)<br />
+2차 과제 - [Avatars Markup and CSS styling](https://jimyeong21.github.io/homework/md/avatars)
