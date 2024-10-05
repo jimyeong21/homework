@@ -1,6 +1,6 @@
 # 저를 소개합니다!
 
-![poster](./assets/md/images/its-me-jimyeong.jpeg)
+![poster](./images/its-me-jimyeong.jpeg)
 
 ## 이름
 
