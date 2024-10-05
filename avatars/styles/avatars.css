@@ -1,0 +1,75 @@
+body * {
+  box-sizing: border-box;
+}
+body {
+  margin: 50px;
+}
+h2 {
+  margin: 40px 0 20px 0;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.avatars-box {
+  padding: 35px 52px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  list-style: none;
+}
+.avatars-box li {
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.avatars-box li img {
+  width: 100%;
+  border-radius: 50%;
+}
+.avatars-box .status {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 17.78px;
+  height: 17.78px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.avatars-box .status.on {
+  background-color: #4cfe88;
+}
+.avatars-box .status.off {
+  background-color: #dbdbdb;
+}
+.flex-area .avatars-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 422px;
+}
+.float-area .avatars-box {
+  overflow: hidden;
+  width: 422px;
+}
+.float-area .avatars-box::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.float-area .avatars-box li {
+  float: left;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.float-area .avatars-box li:nth-child(4n) {
+  margin-right: 0;
+}
+.float-area .avatars-box li:nth-child(-n + 4) {
+  margin-top: 0;
+}
