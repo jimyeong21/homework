@@ -4,4 +4,4 @@
 
 ## 과제 list
 
-[저를 소개합니다!](https://jimyeong21.github.io/homework/about-me)
+[저를 소개합니다!](https://jimyeong21.github.io/homework/md/about-me)
