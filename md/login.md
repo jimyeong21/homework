@@ -76,8 +76,8 @@
 
 ```html
 <div class="login-ip">
+  <label for="ip-security" class="login-ip__label">IP 보안</label>
   <button type="button" onclick="ipSwitch(), window.open('./pages/ip_security.html')" aria-pressed="false" id="ip-security" class="login-ip__button">
-    <label for="ip-security" class="login-ip__label">IP 보안</label>
     <span class="switch off">OFF</span>
     <span class="switch on">ON</span>
   </button>
