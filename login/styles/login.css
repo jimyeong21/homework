@@ -1,1 +1,196 @@
-/* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요 */
+:root {
+  --color-primary: #03cf5d;
+  --color-white: #fff;
+  --color-grey: #999;
+  --color-black: #333;
+  --color-red: #ff1414;
+  --color-base: #121212;
+  --color-focus: #24388d;
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+}
+
+body {
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: var(--font-size-16);
+  color: var(--color-base);
+}
+
+:focus {
+  outline-color: var(--color-focus);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.logo-naver {
+  text-align: center;
+  font-size: 0;
+
+  a {
+    display: inline-block;
+  }
+}
+
+.login-wrapper {
+  padding: 4.375rem 1.25rem;
+  width: 100%;
+  inline-size: 100%;
+
+  @media (min-width: 768px) {
+    width: 500px;
+    inline-size: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-inline: auto;
+  }
+}
+
+.login-form {
+  margin-top: 2.5rem;
+  margin-block-start: 2.5rem;
+}
+
+.login-list {
+  .login-list__item {
+    & + .login-list__item {
+      margin-top: 0.625rem;
+      margin-block-start: 0.625rem;
+    }
+  }
+}
+
+.user-info {
+  --light-grey: #dadada;
+  --border-color: var(--light-grey);
+
+  .user-info__input {
+    padding: 0.8125rem 0.875rem;
+    width: 100%;
+    inline-size: 100%;
+    height: 45px;
+    block-size: 45px;
+    border: 1px solid var(--border-color);
+    background-color: var(--white-color);
+    font-size: var(--font-size-14);
+
+    &:focus {
+      outline: 1px solid var(--color-primary);
+      background-color: #e9f0fd;
+    }
+
+    &::placeholder {
+      color: var(--color-grey);
+    }
+
+    & + .user-info__validation {
+      display: none;
+    }
+
+    &:user-invalid + .user-info__validation {
+      display: block;
+      margin-top: 0.4375rem;
+      margin-block-start: 0.4375rem;
+      font-size: var(--font-size-14);
+      color: var(--color-red);
+    }
+  }
+}
+
+.login-button {
+  all: unset;
+  margin-top: 1.25rem;
+  margin-bottom: 0.625rem;
+  margin-block: 1.25rem 0.625rem;
+  width: 100%;
+  inline-size: 100%;
+  height: 45px;
+  block-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: var(--color-white);
+  text-align: center;
+  background-color: var(--color-primary);
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid var(--color-focus);
+  }
+}
+
+.login-keep {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  float: right;
+
+  .login-keep__check {
+    margin: 0;
+    width: 24px;
+    inline-size: 24px;
+    height: 24px;
+    block-size: 24px;
+    margin-right: 0.3125rem;
+    margin-inline-end: 0.3125rem;
+    background: url(./../../assets/login/unchecked.svg) center / 100% no-repeat;
+    cursor: pointer;
+    appearance: none;
+
+    &:checked {
+      background: url(./../../assets/login/checked.svg) center / 100% no-repeat;
+    }
+  }
+
+  @media (min-width: 768px) {
+    float: left;
+  }
+}
+
+.login-ip {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    float: right;
+
+    .login-ip__label {
+      cursor: pointer;
+    }
+
+    .login-ip__button {
+      all: unset;
+      cursor: pointer;
+
+      &:focus-visible {
+        outline: 2px solid var(--color-focus);
+      }
+
+      &[aria-pressed="true"] .switch.off {
+        display: none;
+      }
+
+      &[aria-pressed="true"] .switch.on {
+        display: inline-block;
+        color: var(--color-primary);
+      }
+
+      &[aria-pressed="false"] .switch.off {
+        display: inline-block;
+        color: var(--color-grey);
+      }
+
+      &[aria-pressed="false"] .switch.on {
+        display: none;
+      }
+    }
+  }
+}
