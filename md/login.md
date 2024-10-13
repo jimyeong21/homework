@@ -1,6 +1,6 @@
 # 3차 과제 - 네이버 로그인 폼
 
-🔗 [login.html 바로가기](https://jimyeong21.github.io/homework/login/login.html)
+🔗 <a href="https://jimyeong21.github.io/homework/login/login.html" target="_blank">login.html 바로가기</a>
 
 ## 과제를 수행하기에 앞서 중점으로 둔 것들
 
