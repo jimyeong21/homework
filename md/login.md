@@ -111,7 +111,7 @@ function ipSwitch() {
 
 <p style="text-align: center;">
   <img src="./images/img-login-tab.png" alt="로그인 키보드 접근 순서">
-  
+</p>  
   - 아이디 -> 비밀번호 -> 로그인 상태 유지 -> IP 보안 -> 로그인
   - 이렇게 로그인을 제일 마지막으로 키보드가 접근 할 수 있게 하고 싶었지만 구현하지 못했습니다.
   - 제가 알고 있는 헤결 방법은,<br />
