@@ -69,13 +69,13 @@
 
   @media (min-width: 1024px) {
     &:nth-child(1) {
-      background-image: image-set(url(./../products/ipad_pro_wide.jpeg) 1x, url(./../products/ipad_pro_wide_2x.jpeg) 2x);
+      background-image: image-set(url(./../products/ipad_pro_wide.webp) 1x, url(./../products/ipad_pro_wide_2x.webp) 2x);
     }
     &:nth-child(2) {
-      background-image: image-set(url(./../products/ipad_air_wide.jpeg) 1x, url(./../products/ipad_air_wide_2x.jpeg) 2x);
+      background-image: image-set(url(./../products/ipad_air_wide.webp) 1x, url(./../products/ipad_air_wide_2x.webp) 2x);
     }
     &:nth-child(3) {
-      background-image: image-set(url(./../products/iphone15_pro_wide.jpeg) 1x, url(./../products/iphone15_pro_wide_2x.jpeg) 2x);
+      background-image: image-set(url(./../products/iphone15_pro_wide.webp) 1x, url(./../products/iphone15_pro_wide_2x.webp) 2x);
     }
 
     &:nth-child(1),
