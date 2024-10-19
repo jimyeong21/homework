@@ -1,0 +1,70 @@
+.card-title {
+  --title-size-small: var(--large-text);
+  --title-size-large: var(--extra-large-text);
+
+  font-size: var(--title-size-small);
+
+  @media (min-width: 1024px) {
+    font-size: var(--title-size-large);
+  }
+}
+
+.card-slogan {
+  --slogan-size-small: var(--base-text);
+  --slogan-size-large: var(--medium-text);
+  --line-height: var(--line-normal);
+
+  font-size: var(--slogan-size-small);
+  line-height: var(--line-height);
+
+  @media (min-width: 1024px) {
+    font-size: var(--slogan-size-large);
+  }
+}
+
+.card-text {
+  --text-size: var(--small-text);
+  --text-color: var(--gray);
+
+  font-size: var(--text-size);
+  color: var(--text-color);
+}
+
+.button {
+  --button-padding-block: var(--x-small-spacing);
+  --button-padding-inline: var(--small-spacing);
+  --button-blue: var(--blue-200);
+  --button-black: var(--black);
+  --button-white: var(--white);
+  --button-font-small: var(--xx-small-text);
+  --button-font-large: var(--x-small-text);
+
+  padding-block: var(--button-padding-block);
+  padding-inline: var(--button-padding-inline);
+  font-size: var(--button-font-small);
+  border-radius: 25px;
+
+  @media (min-width: 1024px) {
+    font-size: var(--button-font-large);
+  }
+
+  &.button--blue {
+    background-color: var(--button-blue);
+    color: var(--button-white);
+  }
+
+  &.button--black {
+    background-color: var(--button-black);
+    color: var(--button-white);
+  }
+
+  &.button--line-blue {
+    color: var(--button-blue);
+    border: 1px solid currentColor;
+  }
+
+  &.button--line-black {
+    color: var(--button-black);
+    border: 1px solid currentColor;
+  }
+}
